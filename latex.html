@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Forgotten Footprints</title>
+<meta name="description" content="Meet the machines NASA left on the Moon, on Mars and in deep space, told in their own voices.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<canvas id="sky"></canvas>
+<main>
+  <nav class="site-nav" aria-label="Main navigation">
+    <a class="brand" href="#accueil" data-page="home">FORGOTTEN <span>FOOTPRINTS</span></a>
+    <div class="nav-links"><button class="nav-link active" type="button" data-page="home">Home</button><button class="nav-link" type="button" data-page="explore">Explore</button><button class="nav-link" type="button" data-page="about">About</button></div>
+  </nav>
+  <section class="page page-home active" id="page-home">
+  <div class="hero"><div class="heroBg"><div class="fog f1"></div><div class="fog f2"></div><div class="fog f3"></div><div class="horizon"></div></div>
+  
+  <p class="kicker">NASA SPACE APPS 2026 · ABANDONED BUT NOT FORGOTTEN</p>
+  <h1>Forgotten Footprints</h1>
+  <p class="intro">Machines sent by NASA still sit on the Moon, on Mars and in deep space. They are quiet now, but each one has a story. Pick a place, tap a machine and listen to its last transmission.</p>
+  <div class="meter">Machines met: <b id="count">0</b> / <span id="total"></span><div class="bar"><i id="fill"></i></div></div>
+  <div id="win">🚀 <b>Mission complete!</b> You met every machine. Now you are a Keeper of Footprints: tell someone their story.</div>
+    <button class="hero-cta" type="button" data-page="explore">Explore the missions <span aria-hidden="true">→</span></button>
+  </div>
+  </section>
+  <section class="page page-explore" id="page-explore">
+    <div class="explore-head"><span class="eyebrow">CHOOSE YOUR DESTINATION</span><h2>Where should we listen?</h2><p>Choose a world, meet the machines left behind, and discover the final chapter of each mission.</p></div>
+    <div class="planets" id="planets"></div>
+  <p class="zone" id="zone"></p>
+      <div class="grid" id="grid"></div>
+  </section>
+  <section class="page page-about" id="page-about">
+    <div class="about-wrap">
+      <div class="about-head"><span class="eyebrow">A SMALL ARCHIVE OF BIG JOURNEYS</span><h2>Every signal leaves a story.</h2><p>Forgotten Footprints is an interactive tribute to the machines that carried human curiosity beyond Earth.</p></div>
+      <div class="timeline">
+        <article class="time-card"><b>01 · THE MOON</b><h3>First steps outward</h3><p>Landers, science stations and lunar rovers helped people learn how to explore another world.</p></article>
+        <article class="time-card"><b>02 · MARS</b><h3>Robots at work</h3><p>Orbiters, landers, rovers and a tiny helicopter turned a distant planet into a place we could study.</p></article>
+        <article class="time-card"><b>03 · DEEP SPACE</b><h3>Still travelling</h3><p>Some spacecraft continue onward, carrying decades of engineering and a message from Earth.</p></article>
+      </div>
+      <p class="about-note">Take your time. Open a machine card to hear its story, then use the progress meter on the Home page to see how many missions you have met.</p>
+      <button class="hero-cta" type="button" data-page="explore">Start exploring <span aria-hidden="true">→</span></button>
+    </div>
+  </section>
+</main>
+<dialog id="dlg">
+  <button class="close" id="close" aria-label="Quitter" title="Quitter">×</button>
+  <div class="m-wrap"><div class="m-art" id="mart"></div><div class="m-body" id="mbody"></div></div>
+</dialog>
+<script src="script.js"></script>
+</body>
+</html>
